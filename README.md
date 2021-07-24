@@ -1,7 +1,8 @@
 
 # Requirements 
 
-- docker (tested with 18.09.01)
+1. docker (tested with 18.09.01)
+2. clone/download this repository
 
 # Setup/Configuration
 
