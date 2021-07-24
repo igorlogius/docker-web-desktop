@@ -32,15 +32,15 @@ If that is not required/wanted, remove the `-p5900:$VNCPORT` part in the `run.sh
 # How it works / What is used
 
 Dockerfile creates a docker image containing a  
-	- minimal desktop environment (openbox) 
-	- framebuffer based Xserver (xvfb)
-	- x11vnc client 
-	- noVNC + websockify 
+* minimal desktop environment (openbox) 
+* framebuffer based Xserver (xvfb)
+* x11vnc client 
+* noVNC + websockify 
 
-when the image is started it lauches the `startup.sh` which starts 
-	1. xvfb (creates a "virtual" xserver) 
-	2. x11vnc (starts a vnc server which connects to the X server session)
-	3. novnc_proxy (novnc + websockify) connect to the x11vnc and setup a webserver which displays the xserver session 
+When a container is started it lauches the `startup.sh` which starts 
+1. xvfb (creates a "virtual" xserver) 
+1. x11vnc (starts a vnc server which connects to the X server session)
+1. novnc_proxy (novnc + websockify) connect to the x11vnc and setup a webserver which displays the xserver session 
 
 # Custom Software
 
