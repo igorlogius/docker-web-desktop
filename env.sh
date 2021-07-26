@@ -1,5 +1,5 @@
 #!/bin/bash
 
-export TAGNAME=docker-remote-01
-export HTTPPORT=8091
+export TAGNAME=web-desk-01
+export WEBPORT=8091
 
