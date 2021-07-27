@@ -28,7 +28,7 @@ add the `-d` switch to the docker command in the `run.sh` script
 # VNC Port is also exposed
 
 Per default the `run.sh` exposes the VNC port and the HTTP port so it is also possible to connect via a vnc client
-If that is not required/wanted, remove the `-p5900:$VNCPORT` part in the `run.sh` script 
+If that is not required/wanted, remove the `-p$VNCPORT:5900` part in the `run.sh` script 
 
 # How it works / What is used
 
